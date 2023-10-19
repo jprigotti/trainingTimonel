@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
+
+
+
+
+:root {
+    --color1: #fdf4b0;
+    --color2: #a4dcb9;
+    --color3: #5bcebf;
+    --color4: #32b9be;
+    --color5: #2e97b7;
+    --color6: rgba(86, 34, 139, .7);
+    --color7: rgba(204, 0, 116, .7);
+    --color8: #0ac4b4;
+    --color9: #f25621;
+
+    /* Fonts*/
+    --poppins: 'Poppins', sans-serif;
+    --roboto: 'Roboto', sans-serif;
+
+}
+
+.main-container {
+    width: 80% !important;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1050px) {}
+
+@media screen and (max-width: 700px) {
+    .main-container {
+        width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main-container {
+        width: 95% !important;
+    }
+}
