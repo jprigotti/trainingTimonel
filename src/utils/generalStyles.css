@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
 
 :root {
-    --wrong: #D71313;
-    --right: #35A29F;
+    --wrong: rgba(215, 19, 19, 0.3);
+    --right: rgba(53, 162, 159, 0.8);
     --color1: #fdf4b0;
     --color2: #a4dcb9;
     --color3: #5bcebf;
