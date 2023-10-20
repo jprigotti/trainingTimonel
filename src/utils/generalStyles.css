@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap');
 
-
-
-
 :root {
+    --wrong: #D71313;
+    --right: #35A29F;
     --color1: #fdf4b0;
     --color2: #a4dcb9;
     --color3: #5bcebf;
@@ -22,20 +21,21 @@
 }
 
 .main-container {
-    width: 80% !important;
+    width: 100vw !important;
     margin: 0 auto;
+    padding: 0 !important; 
 }
 
 @media screen and (max-width: 1050px) {}
 
 @media screen and (max-width: 700px) {
     .main-container {
-        width: 90% !important;
+        width: 100vw !important;
     }
 }
 
 @media screen and (max-width: 550px) {
     .main-container {
-        width: 95% !important;
+        width: 100vw !important;
     }
 }

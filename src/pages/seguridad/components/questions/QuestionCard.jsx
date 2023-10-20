@@ -1,56 +1,40 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import "./questionCard.css"
+import "../../../../utils/generalStyles.css"
 
-const QuestionCard = ({ pregunta, opcion_1, opcion_2, opcion_3, correcta }) => {
-    const [selectedOption, setSelectedOption] = useState('option1');
+const QuestionCard = ({ pregunta, opcion_1, opcion_2, opcion_3, correcta, explicacion }) => {
+    const [explanation, setExplanation] = useState('');
 
-    const handleOptionChange = (event) => {
-        setSelectedOption(event.target.value);
+    const handleSelectOption = (event) => {
+        clearStyles();
+        console.log("option", event.target.textContent);
+        console.log("correcta", correcta);
+        if (event.target.textContent === correcta) {
+            console.log("Correcto");
+            setExplanation(explicacion);
+            event.target.classList.add('correct-answer');
+        } else {
+            console.log("Falso");
+            event.target.classList.add('incorrect-answer');
+        }
+    };
+
+    const clearStyles = () => {
+        console.log("clear styles");
+        const elements = document.querySelectorAll('.btn');
+        elements.forEach((element) => {
+            element.classList.remove('incorrect-answer')
+            element.classList.remove('correct-answer')
+        });
     };
 
     return (
-        <div>
-            {/* <p>{pregunta}</p>
-            <p>{opcion_1}</p>
-            <p>{opcion_2}</p>
-            <p>{opcion_3}</p>
-            <p>Respuesta: {correcta}</p> */}
-
-            <div>
-                <label>
-                    <input
-                        type="radio"
-                        name="radioGroup"
-                        value="option1"
-                        checked={selectedOption === 'option1'}
-                        onChange={(event) => setSelectedOption(event.target.value)}
-                    />
-                    Option 1
-                </label>
-                <br />
-                <label>
-                    <input
-                        type="radio"
-                        name="radioGroup"
-                        value="option2"
-                        checked={selectedOption === 'option2'}
-                        onChange={(event) => setSelectedOption(event.target.value)}
-                    />
-                    Option 2
-                </label>
-                <br />
-                <label>
-                    <input
-                        type="radio"
-                        name="radioGroup"
-                        value="option3"
-                        checked={selectedOption === 'option3'}
-                        onChange={(event) => setSelectedOption(event.target.value)}
-                    />
-                    Option 3
-                </label>
-                <br />
-                <p>Selected option: {selectedOption}</p>
-            </div>
+        <div className='questions-container'>
+            <p className="my-2">{pregunta}</p>
+            <button className="btn mb-1" onClick={(event) => handleSelectOption(event)}>{opcion_1}</button>
+            <button className="btn mb-1" onClick={(event) => handleSelectOption(event)}>{opcion_2}</button>
+            <button className="btn mb-1" onClick={(event) => handleSelectOption(event)}>{opcion_3}</button>
+            <p>{explanation}</p>
         </div>
     )
 }

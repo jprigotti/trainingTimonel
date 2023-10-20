@@ -1,13 +1,19 @@
 import React from 'react'
 import QuestionsCarousel from '../components/questions/questionsCarousel'
-
+import "../../../utils/generalStyles.css"
+import "./seguridadView.css"
 
 
 function SeguridadView() {
   return (
-    <div>
-      <h1>Seguridad</h1>
-   <QuestionsCarousel />
+    <div className="seguridad-container">
+      <div className="header-container">
+        <h2 className='mb-1'>Seguridad</h2>
+      </div>
+      <div className="body-container">
+        <QuestionsCarousel />
+      </div>
+
     </div>
   )
 }
