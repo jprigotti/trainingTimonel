@@ -6,6 +6,7 @@
     justify-content: flex-start;
     align-items: center;
     font-family: var(--poppins);
+    min-height: 700px;
 }
 
 .btn-option {
@@ -25,12 +26,19 @@
     background-color: var(--wrong);
 }
 
-.hide-arrow{
+.hide-arrow {
     display: none !important;
 }
 
-.answer-detail{
+.answer-detail {
     font-family: var(--roboto);
     font-weight: 400;
     font-size: 0.9rem;
+}
+
+
+@media screen and (max-width: 550px) {
+    .questions-container {
+        width: 95%;
+    }
 }
