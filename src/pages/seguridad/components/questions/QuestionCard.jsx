@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import "./questionCard.css"
 import "../../../../utils/generalStyles.css"
 
-const QuestionCard = ({ pregunta, opcion_1, opcion_2, opcion_3, correcta, explicacion }) => {
+const QuestionCard = ({ id, pregunta, opcion_1, opcion_2, opcion_3, correcta, explicacion, questionsOK, setQuestionsOK }) => {
     const [explanation, setExplanation] = useState('');
 
 
@@ -44,6 +44,10 @@ const QuestionCard = ({ pregunta, opcion_1, opcion_2, opcion_3, correcta, explic
         }
     };
 
+    const handleQuestionsReset = () => {
+        localStorage.clear();
+    }
+
     const clearStyles = () => {
         console.log("clear styles");
         const elements = document.querySelectorAll('.btn-option');
@@ -53,14 +57,32 @@ const QuestionCard = ({ pregunta, opcion_1, opcion_2, opcion_3, correcta, explic
         });
     };
 
+    const handleQuestionOK = () => {
+        const index = questionsOK.findIndex((index) => index == id)
+        console.log(`the index of Id ${id} is `, index);
+
+        if (index == -1) {
+            const tempArray = [...questionsOK]
+            setQuestionsOK([...questionsOK, id]);
+            localStorage.setItem('questionsOK', JSON.stringify([...tempArray, id]));
+        }
+    }
+
     return (
         <div className='questions-container'>
-            <p className="my-2">{pregunta}</p>
-            <button className="btn-option mb-1" onClick={(event) => handleSelectOption(event)}>{opcion_1}</button>
-            <button className="btn-option mb-1" onClick={(event) => handleSelectOption(event)}>{opcion_2}</button>
-            <button className="btn-option mb-1" onClick={(event) => handleSelectOption(event)}>{opcion_3}</button>
-            <p className='answer-detail'>{explanation}</p>
-        </div>
+            <div className='header'>
+                <button className="btn-reset" onClick={handleQuestionsReset}>Reset cards</button>
+                <button className="btn-ok" onClick={handleQuestionOK}>Aprendida</button>
+            </div>
+
+            <div className='body'>
+                <p className="mb-2">{id} {pregunta}</p>
+                <button className="btn-option mb-1" onClick={(event) => handleSelectOption(event)}>{opcion_1}</button>
+                <button className="btn-option mb-1" onClick={(event) => handleSelectOption(event)}>{opcion_2}</button>
+                <button className="btn-option mb-1" onClick={(event) => handleSelectOption(event)}>{opcion_3}</button>
+                <p className='answer-detail'>{explanation}</p>
+            </div>
+        </div >
     )
 }
 
