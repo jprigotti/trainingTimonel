@@ -1,0 +1,29 @@
+.navbar-container{
+    width: 100%;
+    background-color: var(--navbar1);
+    font-family: var(--roboto);
+    color: #fff;
+}
+
+.navbar-container ul{
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.navbar-container li{
+padding: 0.5rem 1rem;
+margin: 0 0.5rem;
+list-style: none;
+text-decoration: none;
+background-color: var(--navbar2) ;
+color: black;
+}
+
+.navbar-container li:hover{
+    background-color: var(--navbar3);
+}
+
+
+
+

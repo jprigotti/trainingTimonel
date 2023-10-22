@@ -4,6 +4,9 @@
 :root {
     --wrong: rgba(215, 19, 19, 0.3);
     --right: rgba(53, 162, 159, 0.8);
+    --navbar1: rgba(2, 157, 175, 1);
+    --navbar2: #e5d599;
+    --navbar3: #ffc219;
     --color1: #fdf4b0;
     --color2: #a4dcb9;
     --color3: #5bcebf;
