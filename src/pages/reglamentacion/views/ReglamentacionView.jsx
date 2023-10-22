@@ -14,7 +14,8 @@ function ReglamentacionView() {
             <div className="body-container">
             </div>
             <QuestionsCarousel />
-            <TestingSeniales />
+            <a href="https://script.google.com/macros/s/AKfycbyxFMWjRvgvY1icttkh4EiDVzBNuVl1ZCTvYdJmnr5ogNmFHS70c9l2-x9xhxUYVA1IcQ/exec">Testing Señiales</a>
+            
         </div>
     )
 }
