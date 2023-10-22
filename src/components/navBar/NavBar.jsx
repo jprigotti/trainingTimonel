@@ -8,6 +8,7 @@ function NavBar() {
       <ul>
         <li><Link className='link' style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Seguridad</Link></li>
         <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/meteorologia">Meteorologia</Link></li>
+        <li><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/reglamentacion">Reglamentacion</Link></li>
       </ul>
     </div>
   )
