@@ -3,6 +3,7 @@ import React from 'react'
 import "../../../utils/generalStyles.css"
 import "./reglamentacionView.css"
 import QuestionsCarousel from '../components/QuestionsCarousel'
+import TestingSeniales from '../components/TestingSeniales'
 
 function ReglamentacionView() {
     return (
@@ -13,6 +14,7 @@ function ReglamentacionView() {
             <div className="body-container">
             </div>
             <QuestionsCarousel />
+            <TestingSeniales />
         </div>
     )
 }
