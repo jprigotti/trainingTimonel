@@ -17,118 +17,139 @@ export const questions = [
   },
   {
     "id": 3,
-    Question: "Qué es un Anticiclón?",
-    Answer: "El aire frío desciende generando un centro de alta presion - Anticiclón"
+    Question: "Sistema de Boyado Maritimo",
+    Answer: ["Por sus siglas internacionales I.A.L.A",
+      "Comprende seis tipos de señales:",
+      "- Laterales",
+      "- Aguas Seguras",
+      "- Peligro Aislado",
+      "- Nuevos Peligros",
+      "- Cardinales",
+      "- Especiales"]
   },
   {
     "id": 4,
-    Question: "Cómo se deplaza el viento?",
-    Answer: "Por la diferencia de presión, el viento se desplaza de un centro de alta a otro de baja"
+    Question: "Boya que marca lateral del canal - Señal de Estribor",
+    Answer: ["Entrando la dejamos a estribor (derecha).",
+      "Saliendo la dejamos a babor (izquierda)",
+      "Casco: rojo",
+      "Marca de tope: forma cónica roja",
+      "Luz: roja",
+      "Ritmo de luz. cualquiera, excepto el usado para bifurcación del canal."]
   },
   {
     "id": 5,
-    Question: "Que es la fuerza Coriolis?",
-    Answer: ["La Fuerza de Coriolis es un efecto resultante de la rotación de la Tierra que desvía la trayectoria de las masas de aire.",
-      "La dirección de la desviación depende de la ubicación en el hemisferio.",
-      "En el hemisferio norte, la Fuerza de Coriolis desvía los objetos hacia la derecha, mientras que en el hemisferio sur, los desvía hacia la izquierda.",
-      "La magnitud de la desviación es mayor cuanto más lejos se encuentra del ecuador (a partir de los 15° de latitud).",
-      "A medida que te acercas a los polos, la desviación causada por la Fuerza de Coriolis es más pronunciada."]
+    Question: "Boya que marca lateral del canal - Señal de Babor",
+    Answer: ["Entrando ladejamos a babor (izquierda).",
+      "Saliendo la dejamos a estribor (derecha)",
+      "Casco: verde",
+      "Marca de tope: forma cilíndrica verde",
+      "Luz: verde.",
+      "Ritmo de luz. cualquiera, excepto el usado para bifurcación del canal."]
   },
   {
     "id": 6,
-    Question: "Qué son las Isobaras?",
-    Answer: "Son líneas que unen puntos de igual presión"
+    Question: "Aguas Seguras",
+    Answer: ["Color: Rojo y blanco en bandas verticales alternadas.",
+      "Forma: Esférica",
+      "Marca de Tope: Una esfera roja.",
+      "Luz: (cuando lleve) blanca.",
+      "Un destello largo c/10seg, o letra Morse “A”.",
+      "Casco: rojo y blanco.",
+      "Marca de tope: Rojo.",
+      "Luz: blaca.",
+      "Un destello corto, seguido de uno largo."]
   },
   {
     "id": 7,
-    Question: "Cómo se clasifican las nubes?",
-    Answer: ["Desarrollo Vertical",
-      "Bajas (menos de 2000)",
-      "Medias (de 2000 a 6000 metros)",
-      "Altas (más de 6000 metros)"]
+    Question: "Peligro Aislado",
+    Answer: ["color: Negra con una franja horizontal rojas.",
+      "Forma: Castillete o espeque (spar).",
+      "Marca de Tope: Dos esferas negras superpuestas.",
+      "Luz: (cuando lleve) blanca, grupo de dos destellos.",
+      "El balizamiento puede estar conformado por una sola señal ubicada justo en el centro del peligro o bien por dos .",
+      "Una boya luminosa a 30 metros de la proa y un boyarín ciego a 30 de la popa.",
+      "La distancia entre, ambas boyas suele ser aproximadamente de 200 metros.sco: rojo y negro."]
   },
   {
     "id": 8,
-    "Question": "¿Cómo se denominan las masas de aire?",
-    "Answer": ["Tropicales o polares (norte o sur)",
-      "Continentales (si pasa por el continente)",
-      "Marítimas (si pasan por el océano)",
-      "Cálida",
-      "Fría o polar"]
+    "Question": "Bifurcación de Canal",
+    "Answer": ["Canal preferido a Estribor",
+      "Canal preferido a Babor"]
   },
   {
     "id": 9,
-    "Question": "Tormentas",
-    "Answer": ["El Río de la Plata se ve afectado por tormentas que provienen generalmente del 3er cuadrante (Sur a Oeste), ya que desde ahí vienen los frentes fríos.",
-    "Cada 7 días tenemos un centro frío.",
-    "Si el viento en altura viene del 4to cuadrante, hay una gran probabilidad que venga un frente frío.",
-    "Las tormentas se asocian a frentes y se hacen más virulentos en verano que hace más calor y hay humedad."]
+    "Question": "Peligro Norte o Cardinal Norte",
+    "Answer": ["Casco: amarillo y negro (banda negra sobre amarilla)",
+      "Marca de tope: negra, doble cono, apuntando hacia arriba",
+      "Luz: blanca.",
+      "Destellos continuos."]
   },
   {
     "id": 10,
-    "Question": "Nubes de tormenta",
-    "Answer": "Nubes Cumulonimbus: Estas nubes son conocidas por su gran desarrollo vertical y se asocian comúnmente con tormentas y precipitaciones intensas."
+    "Question": "Peligro Este o Cardinal Este",
+    "Answer": ["Marca de tope: apuntando hacia los lados opuestos, doble-cono unidos por la base, bandas negras arriba y debajo la banda amarilla.",
+      "Luz: blanca.",
+      "Destellos: 3 destellos - “muy rápidos” o “rápidos” seguidos de un período de eclipse"]
   },
   {
     "id": 11,
-    "Question": "Caracteristicas de las nubes de tormenta",
-    "Answer": "Pueden producir lluvias y vientos fuertes, con caída de granizo y tormentas eléctricas."
+    "Question": "Peligro Sur o Cardinal Sur",
+    "Answer": ["Marca de tope: doble cono, apuntando hacia abajo.",
+      "Casco: banda negra debajo de amarilla.",
+      "Luz: blanca.",
+      "Destellos: 6 destellos “muy rápidos” o “rápidos” más un destello “largo” seguidos por un período de eclipse."]
   },
   {
     "id": 12,
-    "Question": "Qué riesgos están asociados a una nube de tormenta?",
-    "Answer": "Baja visibilidad, viento, ráfagas"
+    "Question": "Peligro Oeste o Cardinal Oeste",
+    "Answer": ["Marca de tope apuntándose mutuamente, doble-cono unidos por el vértice.",
+      "Casco: banda negra al medio y banda amarilla arriba y abajo.",
+      "Luz : blanca.",
+      "Destellos: 9 destellos “muy rápidos” o“rápidos” seguidos por un período de eclipse.",
+      "El destello largo (no menos de 2 seg.) es un artificio para asegurarse que los 3 o 9 destellos",
+      "no sean confundidos con los 6 de la cardinal sur."]
   },
   {
     "id": 13,
-    "Question": "Existen cuatro tipos de frentes",
-    "Answer": ["1 frente frío: cuando la masa fría desplaza a la vertical",
-    "2 frente cálido: cuando la masa de aire cálida desplaza a la masa fría",
-    "3 frente ocluido: cuando la masa de aire frío alcanza a la cálida",
-    "4 frente estacionario: El frente estacionario determina que el clima se mantiene estable"]
+    "Question": "Prioridad de paso - Motor - Motor",
+    "Answer": ["Cruce: cede el paso el que ve al otro por la banda de estribor",
+      "Vuelta encontrada: ambos caen a estribor",
+      "Alcace: la embarcación que alcanza se mantendrá alejada del alcanzado"]
   },
   {
     "id": 14,
-    "Question": "Las tormentas se forman por",
-    "Answer": ["Frentes - Celdas - Lineas de inestabilidad.",
-    "A. Desplazamiento horizontal: la masa fría desplaza a la cálida, la masa cálida desplaza a la fría, cuando hay una unión de dos frentes, se forma una línea de inestabilidad.",
-    "B. Desarrollo vertical: días de mucho calor y mucha humedad o nubes de desarrollo vertical."]
+    "Question": "Prioridad de paso - Vela - Vela",
+    "Answer": ["Con distintas amuras: cede el paso el barco amurado a babor",
+      "Con la misma amura: cede el paso el barco de barlovento"]
   },
   {
     "id": 15,
-    "Question": "¿Cómo reconocemos el pasaje de un frente frío?",
-    "Answer": ["Si sucede que:",
-    "1. baja notable de la temperatura (de 30º a 20º)",
-    "2. cambia la dirección del viento",
-    "3. sube la presión atmosférica, entonces lo que ha pasado es un frente frío"]
+    "Question": "Prioridad de paso - Motor - Vela",
+    "Answer": ["La embarcación a motor cede el paso. Se mantendrá alejada"]
   },
   {
     "id": 16,
-    "Question": "Línea de inestabilidad",
-    "Answer": ["Es una línea que se desprende de un cumulonimbus que se desarrolla generalmente en primavera verano y que está delante, comúnmente de un frente frío.",
-    "Pasada el frente, vuelve el clima anterior.",
-    "El tiempo dependerá del ancho de esa nube de inestabilidad, la parte severa está entre 20 y 30 minutos, depende de qué tan ancho es y de la velocidad.",
-    "Ese frente es no homogéneo, tienen una estructura similar a un frente frío pero de menor escala.",
-    "Usualmente van por delante de un frente frío, que llegará después.",
-    "El viento es muy intenso en el momento que pasa la banda nubosa.",
-    "Condiciones de formación: frente frío + aire húmedo, se observan vientos del oeste fuertes, se desplazan muy rápidamente (100 km en 3 horas)."]
+    "Question": "Donde se aplica el R.I.P.A.",
+    "Answer": "En el mar libre, en aguas de jurisdicción Nacional y en ríos con comunicación con el mar transitados por buques de ultramar"
   },
   {
     "id": 17,
-    "Question": "Niebla / Neblina",
-    "Answer": ["Ambas generan Baja visibilidad.",
-    "Una niebla se forma por enfriamiento o por aumento del vapor de agua hasta la saturación.",
-    "Atmósfera saturada al 100%.",
-    "Niebla Vs Neblina = densidad (las partículas son más gruesas con niebla que neblina). Cuando vemos hasta 1000 metros es niebla, cuando vemos más lejos es neblina."]
+    "Question": "Despacho de embarcaciones deportivas",
+    "Answer": ["1-Matrícula.",
+      "2-Declaración de entrada y salida (rol de embarque por cuadruplicado).",
+      "3-Carnet habilitante de PNA. Autorización del responsable en ausencia del propietario.",
+      "4- DNI de todos los tripulantes.",
+      "5-Recibos de pago anualidad.",
+      "6- De ser necesario autorización ante escribano, en caso de que viajen menores.",
+      "Todos los tripulantesdeben estar presentes en la reparición de la PNA durante el despacho del rol.Tanto a la salida como al regreso"]
   },
   {
     "id": 18,
-    "Question": "Niebla por radiación, cómo se genera?",
-    "Answer": "Cuando hay poco viento, noches claras (estrelladas) y frías, baja la temperatura, se condensa la atmósfera, la humedad pasa de gaseoso a líquido y luego cuando sube la temperatura se disipa. Si hubiera más viento (por encima de los 10 nudos) esa nube se disipa."
-  },
-  {
-    "id": 19,
-    "Question": "Niebla por Advección, cómo se genera?",
-    "Answer": "La opuesta a radiación, cuando hay mucho viento (15 - 25 km/hr al menos), cuando el aire cálido y húmedo es soplado por el viento a una superficie fría que se enfría y pasa de estado gaseoso a líquido. Se normaliza cuando para el viento, no depende de la temperatura, son más frecuentes en invierno."
+    "Question": "Timonel de Yate",
+    "Answer": ["Gobierno de embarcaciones deportivas hasta 12 metros de eslora y hasta una potencia máxima 600 HP.",
+      "Podrán realizar navegación lacustre y ríos interiores en toda su extención.",
+      "Incluye todo el Río de la Plata interior hasta el oeste de la línea que une Punte Atalaya en la República Argentina con Punta Rosario en Urugay.",
+      "En zonas marítimaslos lugares que establezca la Dependencia de Prefectura del lugar"]
   }
 ]
