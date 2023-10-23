@@ -6,7 +6,7 @@
     justify-content: flex-start;
     align-items: center;
     font-family: var(--poppins);
-    min-height: 300px;
+    min-height: 350px;
 }
 
 .questions-container .header {
